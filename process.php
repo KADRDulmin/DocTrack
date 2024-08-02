@@ -1,5 +1,6 @@
 <?php
 
+require("script.php");
 session_start();
 
 // Check if the user is not logged in, redirect to login.php
@@ -130,9 +131,79 @@ if (isset($_POST["create"])) {
                         }
                     }
                     // Both inserts successful, commit the transaction
+                    $subject = "Your Medical Details Have Been Recorded in the DocTrack Medical Platform";
+                    $message = "<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #87CEEB;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='header'>
+            <h1>DocTrack Medical Platform</h1>
+        </div>
+        <div class='content'>
+            <p>Dear $FirstName $LastName,</p>
+            <p>We are pleased to inform you that your medical details have been successfully recorded in the DocTrack Medical Platform. Below are the details we have on file:</p>
+            <ul>
+                <li><strong>First Name:</strong> $FirstName</li>
+                <li><strong>Last Name:</strong> $LastName</li>
+                <li><strong>Date of Birth:</strong> $DateOfBirth</li>
+                <li><strong>Gender:</strong> $Gender</li>
+                <li><strong>Contact Number:</strong> $ContactNumber</li>
+                <li><strong>Email:</strong> $Email</li>
+            </ul>
+            <p>If you notice any discrepancies or need to update your information, please do not hesitate to contact our support team at support@doctrack.com.</p>
+            <p>Thank you for using DocTrack Medical Platform. We are committed to ensuring your medical records are accurate and up-to-date.</p>
+            <p>Best regards,<br>
+            The DocTrack Team</p>
+        </div>
+        <div class='footer'>
+            <p>&copy; 2024 DocTrack Medical Platform. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>";
+                    $response = sendMail($Email, $subject, $message);
                     $conn->commit();
                     session_start();
                     $_SESSION["create"] = "Patient Recorded Successfully!";
+        
                     header("Location:index.php");
                 } else {
                     // Appointments insertion failed, roll back the transaction

@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 // Check if the user is not logged in, redirect to login.php
 if (!isset($_SESSION['DoctorID'])) {
   header("Location: login.php");
@@ -123,6 +124,7 @@ if (!isset($_SESSION['DoctorID'])) {
           <input type="submit" name="create" value="Add Patient" class="button1">
         </div>
 
+      
       </form>
     </div>
   </div>
