@@ -84,7 +84,7 @@ select {
 	outline: 0;
 	box-shadow: none;
 	border: 0 !important;
-	background: #434343;
+	background: #7fc4e4;
 	background-image: none;
 }
 select::-ms-expand {
@@ -100,7 +100,7 @@ select::-ms-expand {
 select {
 	font-weight: bold;
 	padding: 0 0.5em;
-	color: #333;
+	color: #84bcd6;
 	cursor: pointer;
 	outline: none;
 }
@@ -117,6 +117,7 @@ input[type="date"] {
 	margin: 0;
 	font-weight: bold;
 	border: none;
+	background-color: #84bcd6;
 }
 .medicine {
 	display: flex;

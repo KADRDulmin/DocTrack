@@ -31,7 +31,7 @@
             </div>
 
             <div class="Copyright">
-                Copyright © 2024 - All rights reserved || Designed By: Group 84
+                Copyright © 2024 - All rights reserved || Designed By: GROUP B-81
             </div>
         </div>
     </footer>

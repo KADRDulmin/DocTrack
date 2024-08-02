@@ -34,9 +34,9 @@ function generatePDF($html)
     <link rel="icon" href="imgs/drcare.ico" type="image/x-icon">
 </head>
 
-<body style="color: white; background-color: #2C2842;">
+<body style="color: white; background-color: #8ed1f0;">
     <div class="container" style="box-shadow: rgba(29, 29, 31, 0.25) 0 10px 60px; display: flex; height: auto; max-width: 900px; margin: 0.6em auto; margin-bottom: 30px;">
-        <div class="main main--team" style="width: 100%; height: auto; display: flex; justify-content: space-between; flex-direction: column; background-color: #2C2842; border-radius: 10px;">
+        <div class="main main--team" style="width: 100%; height: auto; display: flex; justify-content: space-between; flex-direction: column; background-color: #8ed1f0; border-radius: 10px;">
             <?php
             // Linking Database.php
             require "db/DataBase.php";
@@ -69,7 +69,7 @@ function generatePDF($html)
                 $result = mysqli_query($conn, $sql);
                 while ($row = mysqli_fetch_array($result)) {
             ?>
-                    <section class="prescription-letterhead" style="background-color: #433F57; overflow: hidden; white-space: nowrap; height: 200px; margin: 0 20px; border-radius: 10px; text-align: center;">
+                    <section class="prescription-letterhead" style="background-color: #6bc0e7; overflow: hidden; white-space: nowrap; height: 200px; margin: 0 20px; border-radius: 10px; text-align: center;">
                         <h2 style="font-size: 32px; font-weight: bolder; padding-top: 30px;"> Medical Prescription </h2>
                         <div class="letterhead-info" style="display: flex; height: 180px; align-items: center; justify-content: space-between;">
                             <div class="doctor-name">
@@ -80,7 +80,7 @@ function generatePDF($html)
                             </div>
                         </div>
                     </section>
-                    <section class="info-border" style="background-color: #433F57; display: flex; justify-content: center; align-items: center; overflow: hidden; white-space: nowrap; height: auto; margin: 20px auto; width: 85%; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                    <section class="info-border" style="background-color: #6bc0e7; display: flex; justify-content: center; align-items: center; overflow: hidden; white-space: nowrap; height: auto; margin: 20px auto; width: 85%; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
                         <section class="contact" style="font-size: 20px; margin: 0px 0px 0px 30px;">
                             <h5> Contact: 074-777-2222</h5>
                         </section>
@@ -88,7 +88,7 @@ function generatePDF($html)
                             <h5> Email: <?php echo $row['Email']; ?></h5>
                         </section>
                     </section>
-                    <section class="prescription-details" style="background-color: #433F57; display: flex; height: auto; margin: 20px auto; width: 85%; border-radius: 10px; justify-content: center; align-items: center;">
+                    <section class="prescription-details" style="background-color: #6bc0e7; display: flex; height: auto; margin: 20px auto; width: 85%; border-radius: 10px; justify-content: center; align-items: center;">
                         <div class="prescription-details-box" style="background-color: white; color: black; padding: 1.2em; height: auto; margin: 20px auto; width: 90%; border-radius: 10px;">
                             <div class="patient" style="display: flex; width: 100%;">
                                 <div class="patientName" style="width: 100%; margin: -20px 0px -100px 0px;">
@@ -104,7 +104,7 @@ function generatePDF($html)
                             $prescription_result = mysqli_query($conn, $prescription_sql);
                             while ($prescription_row = mysqli_fetch_array($prescription_result)) {
                             ?>
-                                <div class="Meds" style="background-color: #DFDDEF; border-radius: 15px; margin: 4px auto; padding: 0 1.5em; display: flex; width: 90%; justify-content: center; align-items: center;">
+                                <div class="Meds" style="background-color: #a9d8ee; border-radius: 15px; margin: 4px auto; padding: 0 1.5em; display: flex; width: 90%; justify-content: center; align-items: center;">
                                     <div class="MedName" style="width: 100%;">
                                         <h5 style="margin: 8px 0 5px 0; font-size: 15px;"><?php echo $prescription_row['MedName']; ?></h5>
                                         <p style="margin: 5px 0 0 0;"><?php echo $prescription_row['ScTime']; ?></p>

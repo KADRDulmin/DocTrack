@@ -1,4 +1,6 @@
-
+:root {
+  --info-colors: #6bc0e7;
+}
 
 
 .container {
@@ -26,7 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #2C2842;
+  background-color: #8ed1f0;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -54,7 +56,7 @@ a {
   transition: background 0.3s ease;
   text-align: center;
   border-radius: 20px;
-  padding: 5px 100% 10px 20px;
+  padding: 5px;
   margin: 15px auto;
   width: 20%;
 }
@@ -72,10 +74,7 @@ a {
   color: var(--white);
   transition: background 0.3s ease;
   text-align: center;
-  border-radius: 20px;
-  padding: 5px 100% 5px 20px;
-  margin: 15px auto;
-  width: 20%;
+
 }
 
 .button--add3 {
@@ -100,7 +99,7 @@ a {
 }
 
 .has-top-border {
-  background-color: #433F57;
+  background-color: var(--info-colors);
   overflow: auto;
   white-space: nowrap;
   height: 500px;
@@ -130,7 +129,7 @@ a {
 
 /* Prescription Page */
 .prescription-letterhead {
-  background-color: #433F57;
+  background-color: var(--info-colors);
   white-space: nowrap;
   height: 280px;
   margin: 20px;
@@ -173,7 +172,7 @@ a {
 }
 
 .prescription-details {
-  background-color: #433F57;
+  background-color: var(--info-colors);
   overflow: auto;
   height: auto;
   margin: 20px auto;
@@ -213,7 +212,7 @@ a {
 /* Meds */
 
 .Meds {
-  background-color: #5d6091;
+  background-color: var(--info-colors);
   border-radius: 15px;
   margin: 10px 0;
   padding: 1.5em;
@@ -234,7 +233,7 @@ a {
 }
 
 .info-border {
-  background-color: #433F57;
+  background-color: var(--info-colors);
   display: flex;
   justify-content: center;
   align-items: center;

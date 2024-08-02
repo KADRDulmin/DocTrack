@@ -89,7 +89,7 @@ $dob = $row["DateOfBirth"];
 
                 <!-- Medications -->
 
-                <div class="form-floating" style="background-color: #434343; border-radius: 10px;">
+                <div class="form-floating" style="background-color: #84bcd6; border-radius: 10px;">
                     <div class="medicine">
                         <section class="med_list"></section>
                         <div id="add_med" data-toggle="tooltip" data-placement="right" title="Click anywhere on the blank space to add more.">Click to add Medications...</div>
@@ -103,7 +103,7 @@ $dob = $row["DateOfBirth"];
                 <!-- Submit -->
 
                 <div class="">
-                    <input type="submit" name="create" value="Add Patient" class="button1">
+                    <input type="submit" name="create" value="Add Record" class="button1">
                 </div>
 
             </form>

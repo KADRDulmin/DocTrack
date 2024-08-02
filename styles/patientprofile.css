@@ -1,6 +1,6 @@
 
 :root {
-  --info-colors: #a6d4ea;
+  --info-colors: #9bdefd;
 }
 
 .container {
@@ -127,12 +127,12 @@ a {
   align-items: center;
   text-align: center;
   margin-top: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* Prescription Page */
 .prescription-letterhead {
-  background-color: #433F57;
+  background-color: var(--info-colors);
   white-space: nowrap;
   height: 280px;
   margin: 20px;
@@ -175,7 +175,7 @@ a {
 }
 
 .prescription-details {
-  background-color: #433F57;
+  background-color: var(--info-colors);
   overflow: auto;
   height: auto;
   margin: 20px auto;
@@ -184,7 +184,7 @@ a {
 }
 
 .prescription-details-box {
-  background-color: white;
+  background-color: rgb(225, 225, 225);
   color: black;
   padding: 1.2em;
   height: auto;
@@ -215,7 +215,7 @@ a {
 /* Meds */
 
 .Meds {
-  background-color: #5d6091;
+  background-color: var(--info-colors);
   border-radius: 15px;
   margin: 10px 0;
   padding: 1.5em;

@@ -67,14 +67,14 @@ form {
 }
 
 input {
-  background-color: #434343;
+  background-color: #84bcd6;
   border: 0px;
 
 }
 
 .form-select {
   border: 0px;
-  background: #434343;
+  background: #84bcd6;
   color: #f2f2f2;
   border-radius: 10px;
 }
@@ -82,7 +82,7 @@ input {
 .form-control {
   border: 0px;
   border-radius: 10px;
-  background: #434343;
+  background: #84bcd6;
   color: #f2f2f2;
   margin: 5px 150px 0 0;
 
@@ -90,18 +90,18 @@ input {
 
 .form-control:focus {
   color: rgb(255, 255, 255);
-  background-color: #212121;
+  background-color: #7fc4e4;
   transition: .1s;
   transition-property: box-shadow;
 }
 
 .form-control:active {
-  background: #434343;
+  background: #7fc4e4;
 
 }
 
 .floatingInput {
-  background: #434343;
+  background: #84bcd6;
 
 }
 
@@ -119,7 +119,7 @@ input {
 }
 
 .telnumber {
-  background-color: #434343;
+  background-color: #84bcd6;
   border-radius: 10px;
   border: 0px;
   width: 50%;
@@ -128,7 +128,7 @@ input {
 
 .telnumber:focus {
   color: rgb(255, 255, 255);
-  background-color: #212121;
+  background-color: #7fc4e4;
   border: transparent;
   transition: .1s;
   transition-property: box-shadow;
@@ -139,7 +139,7 @@ input {
 }
 
 .dateinput {
-  background-color: #434343;
+  background-color: #84bcd6;
   color: #f2f2f2;
   width: 40%;
   height: 80%;
@@ -150,7 +150,7 @@ input {
 
 .dateinput:focus {
   color: rgb(255, 255, 255);
-  background-color: #212121;
+  background-color: #7fc4e4;
   transition: 2s;
   transition-property: box-shadow;
 }
@@ -177,12 +177,12 @@ input {
   letter-spacing: 5px;
   text-transform: uppercase;
   cursor: pointer;
-  color: #2c9caf;
+  color: #f8f8f8;
   transition: all 1000ms;
   font-size: 15px;
   position: relative;
   overflow: hidden;
-  outline: 2px solid #2c9caf;
+  outline: 3px solid #ededed;
 }
 
 .button1:hover {

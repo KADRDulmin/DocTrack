@@ -106,7 +106,7 @@ if (!isset($_SESSION['DoctorID'])) {
 
         <!-- Medications -->
 
-        <div class="form-floating" style="background-color: #434343; border-radius: 10px;">
+        <div class="form-floating" style="background-color: #84bcd6; border-radius: 10px;">
           <div class="medicine">
             <section class="med_list"></section>
             <div id="add_med" data-toggle="tooltip" data-placement="right" title="Click anywhere on the blank space to add more.">Click to add Medications...</div>

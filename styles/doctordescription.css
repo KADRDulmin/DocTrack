@@ -13,11 +13,11 @@
 .detail-container {
     
     justify-content: space-between;
-    background: #2C2842;
+    background: #84bcd6;
     flex-wrap: wrap;
     padding: 55px;
     margin-left: 100px;
-    border-radius: 8px;
+    border-radius: 8px; 
     box-shadow: white;
 }
 
@@ -105,19 +105,21 @@
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    color: #2c9caf;
+    color: #f3f3f3;
     transition: all 1000ms;
     font-size: 15px;
     position: relative;
     overflow: hidden;
-    outline: 2px solid #2c9caf;
+    outline: 2px solid #f5f5f5;
+    background-color: #70bdca;
 }
 
 .button1:hover {
-    color: #282828;
+    color: #ffffff;
     transform: scale(1.1);
     outline: 2px solid #70bdca;
     box-shadow: 4px 5px 17px -4px #268391;
+    background-color: #70bdca;
 }
 
 /*Responsive*/

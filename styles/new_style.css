@@ -149,13 +149,14 @@
   position: relative;
   width: 350px;
   height: 350px;
-  background: #232323;
+  background: #60c1ee;
   border-radius: 20px;
   overflow: hidden;
   margin: 10px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  border: 0px;
 }
 
 .drCardcontainer .card:before {
@@ -176,14 +177,14 @@
 }
 
 .drCardcontainer .card:after {
-  content: "Dr.Care";
+  content: "DocTrack";
   position: absolute;
   top: 30%;
   left: -20%;
   font-size: 12em;
   font-weight: 800;
   font-style: bold;
-  color: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.08);
 
 }
 
@@ -274,7 +275,7 @@
   font-size: 14px;
   display: inline-block;
   color: #e3e3e3;
-  background: #4a4a4a;
+  background: #2fa8df;
   margin: -10px 5px 0 0;
   transition: .5s;
   border-radius: 15px;

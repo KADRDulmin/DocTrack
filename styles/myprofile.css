@@ -5,9 +5,9 @@
   --bali-hai: #8b91b3;
   --catskill-white: #e3edf2;
   --fountain-blue: #5db0c6;
-  --martinique: #2c324b;
-  --port-gore: #22284b;
-  --rhino: #2C2842;
+  --martinique: #92cde9;
+  --port-gore: #92cde9;
+  --rhino: #76cdf5;
   --white: #fff;
 }
 
@@ -175,7 +175,7 @@ svg {
 }
 
 .sidebar--admin {
-  background-color: #3b355e;
+  background-color: #b8e2f6;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -333,7 +333,7 @@ section {
 }
 
 .button-text {
-  color: indigo;
+  color: rgb(255, 255, 255);
   font-size: 1em;
 }
 
@@ -394,7 +394,7 @@ section {
 }
 
 .doctor-category .category-list{
-  background-color: #231F3A;
+  background-color: #38c0ff;
   margin: 0 10px 0 0px;
   width: 60%;
   padding: 2px 20px 2px 20px;
@@ -411,7 +411,7 @@ section {
 }
 
 .doctor-category .category-list:hover {
-  background-color: #8b91b3;
+  background-color: #0db2ff;
 }
 .experience {
   display: flex;
