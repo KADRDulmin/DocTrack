@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 120px auto 50px auto;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.detail-container {
+    
+    justify-content: space-between;
+    background: #2C2842;
+    flex-wrap: wrap;
+    padding: 55px;
+    margin-left: 100px;
+    border-radius: 8px;
+    box-shadow: white;
+}
+
+.dark .detail-container {
+    background: #282828;
+}
+
+
+.detail-container h1 {
+    color: white;
+    text-align: center;
+}
+
+.detail-container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: white;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(53, 53, 53);
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form .gender-box {
+    margin-top: 20px;
+    color: white;
+
+}
+
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.imageInput .input[type="file"] {
+    /* Hide the default file input button */
+    display: none;
+
+}
+
+.img-button {
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    color: white;
+
+}
+
+.button1 {
+    margin: 20px auto 0;
+    display: flex;
+    justify-items: center;
+    padding: 0.9em 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+}
+
+.button1:hover {
+    color: #282828;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+
+/*Responsive*/
+@media screen and (max-width:500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+    .button1 {
+        width: 100%;
+    }
+
+    .detail-container {
+        width: 300%;
+        margin-left: -40px;
+    }
+}

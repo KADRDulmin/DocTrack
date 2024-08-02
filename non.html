@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="styles/prescription.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="prescription_form">
+            <table class="prescription" data-prescription_id="{{ prescription_id }}" border="1">
+                <tbody>
+                    <tr height="15%">
+                        <td colspan="2">
+                            <div class="header">
+                                <div class="logo"><img src="https://seeklogo.com/images/H/hospital-clinic-plus-logo-7916383C7A-seeklogo.com.png"></div>
+                                <div class="credentials">
+                                    <h4>Doctor Name</h4>
+                                    <p>Chamber Name</p><small>Adress</small><br><small>Mb. 0XXXXXXXXX</small></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60%" valign="top"><span style="font-size: 2em">R<sub>x</sub></span>
+                            <hr>
+                            <div class="medicine">
+                                <section class="med_list"></section>
+                                <div id="add_med" data-toggle="tooltip" data-placement="right" title="Click anywhere on the blank space to add more.">Click to add...</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="snacking">Saving...</div>
+            <div id="snacked">Saved!</div>
+        </div>
+    </div>
+    <script id="new_medicine" type="text/template">
+        <div class="med">&#x26AB;<input class="med_name" data-med_id="{{ med_id }}" data-toggle="tooltip" title="Click to edit..." placeholder="Enter medicine name">
+            <div class="med_name_action"><button class="btn btn-sm btn-success save" data-med_id="{{ med_id }}">Save</button><button class="btn btn-sm btn-danger cancel-btn">Cancel</button></div>
+            <div class="schedual">
+                <div class="sc_time folded"><select class="sc" data-med_id="{{ med_id }}"><option value="1+1+1" selected="">1+1+1</option><option value="1+0+1">1+0+1</option><option value="0+1+1">1+1+1</option><option value="1+0+0">1+1+1</option><option value="0+0+1">1+1+1</option><option value="1+1+1+1">1+1+1+1</option></select>
+                    <div
+                        class="med_when_action"><button class="btn btn-sm btn-success save" data-med_id="{{ med_id }}">&amp;check;</button></div>
+            </div>
+            <div class="taking_time select folded"><select class="meal" data-med_id="{{ med_id }}"><option value="1" selected="">After Meal</option><option value="2">Before Meal</option><option value="3">Take any time</option></select>
+                <div class="med_meal_action"><button class="btn btn-sm btn-success save" data-med_id="{{ med_id }}">&amp;check;</button></div>
+            </div>
+        </div>
+        <div class="med_footer">
+            <div class="period folded">Take for<input class="med_period" type="text" data-med_id="{{ med_id }}" placeholder="? days/weeks...">
+                <div class="med_period_action"><button class="btn btn-sm btn-success save" data-med_id="{{ med_id }}">&amp;check;</button></div><span class="date"></span></div>
+            <div class="del_action"><button class="btn btn-sm btn-danger delete" data-med_id="{{ med_id }}"><i class="fa fa-trash" aria-hidden="true"></i></button></div>
+        </div>
+        <hr>
+        </div>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="js/prescription.js"></script>
+</body>
+
+</html>
