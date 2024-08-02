@@ -5,9 +5,9 @@
   --bali-hai: #8b91b3;
   --catskill-white: #e3edf2;
   --fountain-blue: #5db0c6;
-  --martinique: #2c324b;
-  --port-gore: #22284b;
-  --rhino: #2C2842;
+  --martinique: #92cde9;
+  --port-gore: #92cde9;
+  --rhino: #b7ddef;
   --white: #fff;
 }
 
@@ -132,7 +132,7 @@ svg {
 }
 
 .sidebar--admin {
-  background-color: #3b355e;
+  background-color: #92cde9;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -279,7 +279,7 @@ section {
 /* New */
 
 .has-top-border {
-  background-color: #433F57;
+  background-color: #b4d8e8;
   overflow: auto;
   white-space: wrap;
   height: 500px;
